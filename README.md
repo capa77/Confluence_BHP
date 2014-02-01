@@ -1,7 +1,7 @@
 Confluence_BHP
 ==============
 
-This is Confluence Mood for BlackHole PrismCube Image made by @capa
+This is a Confluence_XBMC Mod for BlackHole PrismCube Image made by @capa
 
 
 
