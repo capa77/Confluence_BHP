@@ -68,7 +68,8 @@
 					<posy>0</posy>
 					<width>500</width>
 					<height>620</height>
-					<texture border="20">ContentPanel.png</texture>
+					<texture border="20">ContentPanel_New.png</texture>
+					<colordiffuse>DDFFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -362,7 +363,8 @@
 					<posy>0</posy>
 					<width>650</width>
 					<height>620</height>
-					<texture border="20">ContentPanel.png</texture>
+					<texture border="20">ContentPanel_New.png</texture>
+					<colordiffuse>DDFFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>0</posx>
@@ -691,7 +693,8 @@
 					<posy>0</posy>
 					<width>650</width>
 					<height>620</height>
-					<texture border="20">ContentPanel.png</texture>
+					<texture border="20">ContentPanel_New.png</texture>
+					<colordiffuse>DDFFFFFF</colordiffuse>
 				</control>
 				<control type="image">
 					<posx>0</posx>

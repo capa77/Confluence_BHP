@@ -6,7 +6,6 @@
 			<posx>865</posx>
 			<posy>210</posy>
 			<visible>true</visible>
-			
 			<control type="group">
 				<control type="image">
 					<description>background top</description>
@@ -14,7 +13,7 @@
 					<posy>0</posy>
 					<width>410</width>
 					<height>64</height>
-					<colordiffuse>CCFFFFFF</colordiffuse>
+					<colordiffuse>EEFFFFFF</colordiffuse>
 					<texture>DialogContextTop.png</texture>
 				</control>
 				<control type="image">
@@ -23,7 +22,7 @@
 					<description>background</description>
 					<width>410</width>
 					<height>180</height>
-					<colordiffuse>CCFFFFFF</colordiffuse>
+					<colordiffuse>EEFFFFFF</colordiffuse>
 					<texture>DialogContextMiddle.png</texture>
 				</control>
 				<control type="image">
@@ -32,7 +31,7 @@
 					<posy>244</posy>
 					<width>410</width>
 					<height>44</height>
-					<colordiffuse>CCFFFFFF</colordiffuse>
+					<colordiffuse>EEFFFFFF</colordiffuse>
 					<texture>DialogContextBottom.png</texture>
 				</control>
 <!-- current -->			
