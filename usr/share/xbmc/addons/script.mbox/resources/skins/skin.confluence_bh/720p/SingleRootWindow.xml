@@ -30,6 +30,8 @@ Search for window name
 	<onload>SetProperty(fwAlarmIcon,DefaultIconInfo.png)</onload>
 	<onload condition="IsEmpty(Skin.String(MenuColorNF))">Skin.SetString(menuColorNF,880B7BB7)</onload>
 	<onload condition="IsEmpty(Skin.String(MenuColor))">Skin.SetString(menuColor,blue)</onload>	
+	<onload condition="IsEmpty(Skin.String(MenuColor))">Skin.SetString(menuColor,blue)</onload>
+	<onload condition="IsEmpty(Skin.String(CustomBackgroundPath))">Skin.SetString(CustomBackgroundPath,/usr/share/xbmc/addons/skin.confluence_bh/backgrounds/SKINDEFAULT.jpg)</onload>
 	<controls>
 
 		<!-- Default BackgroundImage -->
