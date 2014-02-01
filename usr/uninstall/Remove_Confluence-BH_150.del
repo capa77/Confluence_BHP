@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm -rf /usr/share/xbmc/addons/script.mbox/resources/skins/skin.confluence_bh
+rm -rf /usr/share/xbmc/addons/skin.confluence_bh
+
+exit 0

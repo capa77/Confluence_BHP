@@ -1,0 +1,13 @@
+<colors>
+	<color name="white">FFFFFFFF</color>
+	<color name="grey">FFa7a7a7</color>
+	<color name="grey2">FF999999</color>
+	<color name="grey3">FF505050</color>
+	<color name="black">FF000000</color>
+	<color name="blue">FF0B7BB7</color>
+	<color name="selected">FFb40ac6</color>
+	<color name="red_d">FF570512</color>
+	<color name="red_m">FF7BB70B</color>
+	<color name="blue_cp">FF0B7BB7</color> 
+	<color name="blue_m">FF0C8BCF</color> 
+</colors>

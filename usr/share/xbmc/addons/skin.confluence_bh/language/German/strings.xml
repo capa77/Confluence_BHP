@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings>
+	<string id="52040">Wetter Widget Anzeigen</string>
+	<string id="52041">BlackHole OSD Wetter in der InfoBar anzeigen</string>
+	<string id="52043">BlackHole OSD Wetter im HauptMenu anzeigen</string>
+	<string id="52042">Skin Debug einschalten</string>
+	<string id="88105">HauptMenue Farbe</string>
+	<string id="88106"> - Hintergrund Farbe der MenuePunkte</string>
+	<string id="88107">Blau</string>
+	<string id="88108">Hell Blau</string>
+	<string id="88109">Weiss</string>
+	<string id="88110">Grau</string>
+	<string id="88111">Rot</string>
+	<string id="88112">Rosa</string>
+	<string id="88113">Violett</string>
+	<string id="88114">Orange</string>
+	<string id="88115">Gelb</string>
+	<string id="88116">Grün</string>
+	<string id="88117">Waehle Farbe</string>
+</strings>
