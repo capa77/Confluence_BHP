@@ -3,7 +3,7 @@
 <!--widget begin-->
 
 		<control type="group">
-			<posx>925</posx>
+			<posx>865</posx>
 			<posy>210</posy>
 			<visible>true</visible>
 			
