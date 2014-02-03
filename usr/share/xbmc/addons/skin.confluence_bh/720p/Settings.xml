@@ -121,6 +121,12 @@
 						<onclick>ActivateWindow(AppearanceSettings)</onclick>
 						<icon>-</icon>
 					</item>
+ 					<item id="10">
+						<label>166</label>
+						<label2>88070</label2>
+						<onclick>ActivateWindow(SkinSettings)</onclick>
+						<icon>special://skin/backgrounds/skinsetting.jpg</icon>
+					</item>
 					<item id="2">
 						<label>157</label>
 						<label2>31401</label2>
@@ -168,12 +174,6 @@
 						<label2>31406</label2>
 						<onclick>ActivateWindow(SystemSettings)</onclick>
 						<icon>-</icon>
-					</item>
-          <item id="10">
-						<label>166</label>
-						<label2>88070</label2>
-						<onclick>ActivateWindow(SkinSettings)</onclick>
-						<icon>special://skin/backgrounds/skinsetting.jpg</icon>
 					</item>
 				</content>
 			</control>

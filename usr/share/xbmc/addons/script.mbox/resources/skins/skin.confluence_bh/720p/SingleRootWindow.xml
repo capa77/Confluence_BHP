@@ -250,206 +250,8 @@ Search for window name
 				<include>DefaultWindowOpenCloseAnimation</include>
 			</control>
 			<include condition="Skin.HasSetting(homepageWeatherWidget)">WeatherWidget</include>
-			<!-- meteo -->
-			<control type="group">
-					<posx>160r</posx>
-					<posy>60</posy>
-    			<visible>Skin.HasSetting(homepageBHWeather)</visible>
-  				<!--<control type="image">
-						<description>weather osd background</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>130</width>
-						<height>100</height>
-						 <texture>bhweather/back.png</texture>
-					</control>-->
-					<control type="image">
-            <description>weather osd background</description>
-						<posx>0</posx>
-						<posy>-70</posy>
-						<width>183</width>
-						<height>400</height>
-						<texture border="0,0,0,0" >pvr-bg.png</texture>
-						<colordiffuse>FEFFFFFF</colordiffuse>
-					</control>
-					
-					<!--	 DAY 0	-->
-					<control type="image">
-						<description>weather osd background</description>
-						<posx>0</posx>
-						<posy>-4</posy>
-						<width>160</width>
-						<height>4</height>
-						<texture>separator.png</texture>
-					</control>
-					<control type="image">
-						<description>weather osd background</description>
-						<posx>0</posx>
-						<posy>70</posy>
-						<width>160</width>
-						<height>4</height>
-						<texture>separator.png</texture>
-					</control>
-					
-					<control type="label">
-						<description>Location temp1 </description>
-						<posx>5</posx>
-						<posy>0</posy>
-						<width>160</width>
-						<height>10</height>
-						<align>center</align>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>$INFO[Window.Property(iMeteolocation)]</label>
-					</control>
-					
-					<control type="label">
-						<description>Wind day </description>
-						<posx>0</posx>
-						<posy>18</posy>
-						<width>160</width>
-						<height>10</height>
-						<align>center</align>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label> $INFO[Window.Property(iMeteowind)]</label>
-					</control>
-					
-					<control type="label">
-						<description>Hum day 1</description>
-						<posx>0</posx>
-						<posy>34</posy>
-						<width>160</width>
-						<height>10</height>
-						<align>center</align>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>r.F. - $INFO[Window.Property(iMeteohum)]</label>
-					</control>
-					
-					<control type="label">
-						<description>Condition day </description>
-						<posx>0</posx>
-						<posy>49</posy>
-						<width>160</width>
-						<height>10</height>
-						<align>center</align>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>$INFO[Window.Property(iMeteocond1)]</label>
-					</control>
-										
-					<control type="label">
-						<description>weather day 1</description>
-						<posx>20</posx>
-						<posy>85</posy>
-						<width>90</width>
-						<height>10</height>
-						<align>left</align>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>$INFO[Window.Property(iMeteoday1)]</label>
-					</control>
-					<control type="image">
-						<description>weather icon 1</description>
-						<posx>70</posx>
-						<posy>70</posy>
-						<width>70</width>
-						<height>70</height>
-						<texture>$INFO[Window.Property(iMeteopic1)]</texture>
-						<visible>!substring(Window.Property(InfoPlateName),true)</visible>
-						<colordiffuse>FFEFEFEF</colordiffuse>
-					</control>
-					<control type="label">
-						<description>weather temp1 </description>
-						<posx>20</posx>
-						<posy>110</posy>
-						<width>90</width>
-						<height>10</height>
-						<align>left</align>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>$INFO[Window.Property(iMeteot1)]</label>
-					</control>
-					
-					<!--DAY 1-->
-					<control type="label">
-						<description>weather day 2</description>
-						<posx>20</posx>
-						<posy>160</posy>
-						<width>90</width>
-						<height>10</height>
-						<align>left</align>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>$INFO[Window.Property(iMeteoday2)]</label>
-					</control>
-					<control type="image">
-						<description>weather icon 1</description>
-						<posx>70</posx>
-						<posy>145</posy>
-						<width>70</width>
-						<height>70</height>
-						<texture>$INFO[Window.Property(iMeteopic2)]</texture>
-						<visible>!substring(Window.Property(InfoPlateName),true)</visible>
-						<colordiffuse>FFEFEFEF</colordiffuse>
-					</control>
-					<control type="label">
-						<description>weather temp1 </description>
-						<posx>20</posx>
-						<posy>185</posy>
-						<width>90</width>
-						<height>10</height>
-						<align>left</align>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>$INFO[Window.Property(iMeteot2)]</label>
-					</control>
-					<!--DAY 2 -->
-					<control type="label">
-						<description>weather day 2</description>
-						<posx>20</posx>
-						<posy>235</posy>
-						<width>90</width>
-						<height>10</height>
-						<align>left</align>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>$INFO[Window.Property(iMeteoday3)]</label>
-					</control>
-					<control type="image">
-						<description>weather icon 1</description>
-						<posx>70</posx>
-						<posy>220</posy>
-						<width>70</width>
-						<height>70</height>
-						<texture>$INFO[Window.Property(iMeteopic3)]</texture>
-						<visible>!substring(Window.Property(InfoPlateName),true)</visible>
-						<colordiffuse>FFEFEFEF</colordiffuse>
-					</control>
-					<control type="label">
-						<description>weather temp1 </description>
-						<posx>20</posx>
-						<posy>260</posy>
-						<width>90</width>
-						<height>10</height>
-						<align>left</align>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>$INFO[Window.Property(iMeteot3)]</label>
-					</control>
-			</control>
-
+				
+			<include condition="Skin.HasSetting(homepageBHWeather)">BhMeteoWidget</include>
 			<!-- Sub Menu -->
 			<control type="group">
 				<posy>550</posy>
@@ -1061,7 +863,7 @@ Search for window name
 			<!-- Favorite addons -->
 			<control type="group">
 				<posx>20</posx>
-				<posy>55r</posy>
+				<posy>220r</posy>
 				<include>DefaultWindowOpenCloseAnimation</include>
 				<control type="button" id="1200101">
 					<description>Favourites push button</description>
@@ -1092,7 +894,7 @@ Search for window name
 			<!-- power off -->
 			<control type="group">
 				<posx>75</posx>
-				<posy>55r</posy>
+				<posy>220r</posy>
 				<include>DefaultWindowOpenCloseAnimation</include>
 				<control type="button" id="1200102">
 					<posx>0</posx>
@@ -5772,7 +5574,7 @@ Search for window name
 						<posy>0</posy>
 						<width>180</width>
 						<height>40</height>
-						<font>font10</font>
+						<font>font12</font>
 						<textcolor>red_m</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
