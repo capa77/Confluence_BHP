@@ -4211,8 +4211,8 @@
 			<width>846</width>
 			<height>720</height>
 			<texture>HomeBlade.png</texture>
-			<animation effect="slide" start="-26,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="-26,0" time="200" delay="200" tween="quadratic" easing="out">WindowClose</animation>
+			<animation effect="slide" start="-26,0" end="0,0" time="200" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="-26,0" time="100" delay="0" tween="quadratic" easing="out">WindowClose</animation>
 		</control>
 	</include>
 

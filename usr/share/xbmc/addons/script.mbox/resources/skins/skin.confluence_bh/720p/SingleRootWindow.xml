@@ -180,6 +180,7 @@ Search for window name
 					<width>480</width>
 					<height>230</height>
 					<texture>black-back_noAlpha.png</texture>
+					<colordiffuse>EFFFFFFF</colordiffuse>
 				</control>
 				<control type="label" id="1100100">
 					<posx>0</posx>
@@ -235,8 +236,8 @@ Search for window name
 				<width>1306</width>
 				<height>90</height>
 				<texture>floor.png</texture>
-				<animation effect="fade" time="250">Visible</animation>
-				<animation effect="fade" time="250">Hidden</animation>
+				<animation effect="fade" time="100">Visible</animation>
+				<animation effect="fade" time="100">Hidden</animation>
 			</control>
 			<control type="image">
 				<description>LOGO</description>
@@ -250,18 +251,18 @@ Search for window name
 				<include>DefaultWindowOpenCloseAnimation</include>
 			</control>
 			<include condition="Skin.HasSetting(homepageWeatherWidget)">WeatherWidget</include>
-				
+			<!-- Meteo -->
 			<include condition="Skin.HasSetting(homepageBHWeather)">BhMeteoWidget</include>
 			<!-- Sub Menu -->
 			<control type="group">
 				<posy>550</posy>
 				<animation type="Visible" reversible="false">
-					<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-					<effect type="fade" start="0" end="100" time="300" />
+					<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="100" />
+					<effect type="fade" start="0" end="100" time="100" />
 				</animation>
 				<animation type="Hidden" reversible="false">
-					<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-					<effect type="fade" start="100" end="0" time="300" />
+					<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="100" />
+					<effect type="fade" start="100" end="0" time="100" />
 				</animation>
 				<control type="group" id="1209001">
 					<posx>0</posx>
@@ -280,8 +281,8 @@ Search for window name
 						<ondown>1200101</ondown>
 						<itemgap>0</itemgap>
 						<orientation>Horizontal</orientation>
-						<animation effect="slide" start="0,0" end="0,0" delay="200" time="200" tween="quadratic" easing="out">Visible</animation>
-						<animation effect="slide" start="0,0" end="0,0" time="200" tween="quadratic" easing="out">Hidden</animation>
+						<animation effect="slide" start="0,0" end="0,0" delay="50" time="50" tween="quadratic" easing="out">Visible</animation>
+						<animation effect="slide" start="0,0" end="0,0" time="50" tween="quadratic" easing="out">Hidden</animation>
 						<onleft>1209010</onleft>
 						<onright>1209010</onright>
 						<visible>Container(1209000).HasFocus(1)</visible>
@@ -340,8 +341,8 @@ Search for window name
 						<ondown>1200101</ondown>
 						<itemgap>0</itemgap>
 						<orientation>Horizontal</orientation>
-						<animation effect="slide" start="0,0" end="0,0" delay="200" time="200" tween="quadratic" easing="out">Visible</animation>
-						<animation effect="slide" start="0,0" end="0,0" time="200" tween="quadratic" easing="out">Hidden</animation>
+						<animation effect="slide" start="0,0" end="0,0" delay="50" time="50" tween="quadratic" easing="out">Visible</animation>
+						<animation effect="slide" start="0,0" end="0,0" time="50" tween="quadratic" easing="out">Hidden</animation>
 						<onleft>1209025</onleft>
 						<onright>1209025</onright>
 						<visible>Container(1209000).HasFocus(15)</visible>
@@ -392,8 +393,8 @@ Search for window name
 						<ondown>1200101</ondown>
 						<itemgap>0</itemgap>
 						<orientation>Horizontal</orientation>
-						<animation effect="slide" start="0,0" end="0,0" delay="200" time="200" tween="quadratic" easing="out">Visible</animation>
-						<animation effect="slide" start="0,0" end="0,0" time="200" tween="quadratic" easing="out">Hidden</animation>
+						<animation effect="slide" start="0,0" end="0,0" delay="50" time="50" tween="quadratic" easing="out">Visible</animation>
+						<animation effect="slide" start="0,0" end="0,0" time="50" tween="quadratic" easing="out">Hidden</animation>
 						<onleft>1209016</onleft>
 						<onright>1209016</onright>
 						<visible>Container(1209000).HasFocus(6)</visible>
@@ -471,8 +472,8 @@ Search for window name
 						<ondown>1200101</ondown>
 						<itemgap>0</itemgap>
 						<orientation>Horizontal</orientation>
-						<animation effect="slide" start="0,0" end="0,0" delay="200" time="200" tween="quadratic" easing="out">Visible</animation>
-						<animation effect="slide" start="0,0" end="0,0" time="200" tween="quadratic" easing="out">Hidden</animation>
+						<animation effect="slide" start="0,0" end="0,0" delay="50" time="50" tween="quadratic" easing="out">Visible</animation>
+						<animation effect="slide" start="0,0" end="0,0" time="50" tween="quadratic" easing="out">Hidden</animation>
 						<onleft>1209010</onleft>
 						<onright>1209010</onright>
 						<visible>Container(1209000).HasFocus(3)</visible>
@@ -519,8 +520,8 @@ Search for window name
 						<ondown>1200101</ondown>
 						<itemgap>0</itemgap>
 						<orientation>Horizontal</orientation>
-						<animation effect="slide" start="0,0" end="0,0" delay="200" time="200" tween="quadratic" easing="out">Visible</animation>
-						<animation effect="slide" start="0,0" end="0,0" time="200" tween="quadratic" easing="out">Hidden</animation>
+						<animation effect="slide" start="0,0" end="0,0" delay="50" time="50" tween="quadratic" easing="out">Visible</animation>
+						<animation effect="slide" start="0,0" end="0,0" time="50" tween="quadratic" easing="out">Hidden</animation>
 						<onleft>1209010</onleft>
 						<onright>1209010</onright>
 						<visible>Container(1209000).HasFocus(9)</visible>
@@ -556,8 +557,8 @@ Search for window name
 						<ondown>1200101</ondown>
 						<itemgap>0</itemgap>
 						<orientation>Horizontal</orientation>
-						<animation effect="slide" start="0,0" end="0,0" delay="200" time="200" tween="quadratic" easing="out">Visible</animation>
-						<animation effect="slide" start="0,0" end="0,0" time="200" tween="quadratic" easing="out">Hidden</animation>
+						<animation effect="slide" start="0,0" end="0,0" delay="50" time="50" tween="quadratic" easing="out">Visible</animation>
+						<animation effect="slide" start="0,0" end="0,0" time="50" tween="quadratic" easing="out">Hidden</animation>
 						<onleft>1209010</onleft>
 						<onright>1209010</onright>
 						<visible>Container(1209000).HasFocus(4)</visible>
@@ -626,7 +627,7 @@ Search for window name
 					<ondown condition="Control.IsVisible(1209001)">1209001</ondown>
 					<ondown condition="!Control.IsVisible(1209001)">1200101</ondown>
 					<pagecontrol>-</pagecontrol>
-					<scrolltime>300</scrolltime>
+					<scrolltime>150</scrolltime>
 					<focusposition>2</focusposition>
 					<movement>1</movement>
 					<orientation>Horizontal</orientation>
@@ -977,7 +978,7 @@ Search for window name
 		<!-- *********** E_ChannelList ********** -->	
 		<control type="group" id="1300000">
 			<visible>substring(Window.Property(CurrentWindow),1300000)</visible>
-			<!--<animation effect="fade" start="0" end="100" time="300">Visible</animation>-->
+			<!--<animation effect="fade" start="0" end="100" time="210">Visible</animation>-->
 			<defaultcontrol always="true">1300049</defaultcontrol>
 
 			<control type="group">
@@ -1092,7 +1093,7 @@ Search for window name
 					<onup>1300050</onup>
 					<ondown>1300050</ondown>
 					<pagecontrol>1300061</pagecontrol>
-					<scrolltime>200</scrolltime>
+					<scrolltime>0</scrolltime>
 					<focusposition>0</focusposition>
 					<movement>2</movement>
 					<visible>true</visible>
@@ -1868,20 +1869,21 @@ Search for window name
 
 			<!-- Main Menu -->
 			<control type="group" id="1300100">
-				<animation effect="slide" start="0,0" end="250,0" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(1300101) | Control.HasFocus(1300102) | ControlGroup(1300110).HasFocus | ControlGroup(1309001).HasFocus">Conditional</animation>
-				<!--animation effect="slide" start="0,0" end="10,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(1300049).HasFocus">Conditional</animation-->
-				<animation effect="slide" start="0,0" end="-250,0" time="300" tween="quadratic" easing="out">WindowClose</animation>
+				<animation effect="slide" start="0,0" end="250,0" time="210" tween="quadratic" easing="out" condition="Control.HasFocus(1300101) | Control.HasFocus(1300102) | ControlGroup(1300110).HasFocus | ControlGroup(1309001).HasFocus">Conditional</animation>
+				<!--animation effect="slide" start="0,0" end="10,0" time="210" tween="quadratic" easing="out" condition="ControlGroup(1300049).HasFocus">Conditional</animation-->
+				<animation effect="slide" start="0,0" end="-250,0" time="210" tween="quadratic" easing="out">WindowClose</animation>
 				<include>DefaultWindowFade</include>
 				<control type="group">
-					<!--animation effect="slide" end="-361,0" time="300" tween="quadratic" easing="out">WindowClose</animation-->
+					<!--animation effect="slide" end="-361,0" time="210" tween="quadratic" easing="out">WindowClose</animation-->
 					<control type="image">
 	                    <posx>-500</posx>
 	                    <posy>0</posy>
 	                    <width>500</width>
 	                    <height>720</height>
 	                    <texture>black-back_noAlpha.png</texture>
-	                    <animation effect="slide" start="-250,0" end="250,0" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(1300101) | Control.HasFocus(1300102) | ControlGroup(1309001).HasFocus | Control.HasFocus(1300103)">Conditional</animation>
-						<animation effect="slide" start="0,0" end="-250,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(1300049).HasFocus | Container(1300102).HasFocus(1) | Control.HasFocus(1300103)">Conditional</animation>
+	                    <colordiffuse>DFFFFFFF</colordiffuse>
+	                    <animation effect="slide" start="-250,0" end="250,0" time="210" tween="quadratic" easing="out" condition="Control.HasFocus(1300101) | Control.HasFocus(1300102) | ControlGroup(1309001).HasFocus | Control.HasFocus(1300103)">Conditional</animation>
+						<animation effect="slide" start="0,0" end="-250,0" time="210" tween="quadratic" easing="out" condition="ControlGroup(1300049).HasFocus | Container(1300102).HasFocus(1) | Control.HasFocus(1300103)">Conditional</animation>
 	                </control>
 	                <control type="image">
 	                    <posx>-12</posx>
@@ -1889,8 +1891,8 @@ Search for window name
 	                    <width>12</width>
 	                    <height>720</height>
 	                    <texture>MediaBladeSub_Part2.png</texture>
-	                    <animation effect="slide" start="-262,0" end="262,0" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(1300101) | Control.HasFocus(1300102) | ControlGroup(1309001).HasFocus">Conditional</animation>
-						<animation effect="slide" start="0,0" end="-262,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(1300049).HasFocus | Container(1300102).HasFocus(1) | Control.HasFocus(1300103)">Conditional</animation>
+	                    <animation effect="slide" start="-262,0" end="262,0" time="210" tween="quadratic" easing="out" condition="Control.HasFocus(1300101) | Control.HasFocus(1300102) | ControlGroup(1309001).HasFocus">Conditional</animation>
+						<animation effect="slide" start="0,0" end="-262,0" time="210" tween="quadratic" easing="out" condition="ControlGroup(1300049).HasFocus | Container(1300102).HasFocus(1) | Control.HasFocus(1300103)">Conditional</animation>
 	                </control>
 				</control>
 				<control type="button" id="1300101">
@@ -1964,7 +1966,7 @@ Search for window name
 						</itemlayout>
 						<focusedlayout height="40" width="255">
 							<control type="image">
-								<animation effect="fade" start="100" end="0" delay="0" time="300" condition="![Control.HasFocus(1300102)]">conditional</animation>
+								<animation effect="fade" start="100" end="0" delay="0" time="210" condition="![Control.HasFocus(1300102)]">conditional</animation>
 								<posx>0</posx>
 								<posy>21</posy>
 								<width>250</width>
@@ -2024,9 +2026,9 @@ Search for window name
 					<control type="group" id="1309001">
 						<posx>-240</posx>
 						<posy>0</posy>
-						<animation effect="slide" start="-500,0" end="500,0" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(1300101) | Control.HasFocus(1300102) | ControlGroup(1309001).HasFocus">conditional</animation>
-						<animation effect="slide" start="0,0" end="-500,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(1300049).HasFocus">Conditional</animation>
-						<animation effect="fade" end="0,0" time="300">WindowClose</animation>
+						<animation effect="slide" start="-500,0" end="500,0" time="210" tween="quadratic" easing="out" condition="Control.HasFocus(1300101) | Control.HasFocus(1300102) | ControlGroup(1309001).HasFocus">conditional</animation>
+						<animation effect="slide" start="0,0" end="-500,0" time="210" tween="quadratic" easing="out" condition="ControlGroup(1300049).HasFocus">Conditional</animation>
+						<animation effect="fade" end="0,0" time="210">WindowClose</animation>
 						<control type="list" id="1300112">
 							<posx>10</posx>
 							<posy>170</posy>
@@ -2125,7 +2127,7 @@ Search for window name
 							<focusposition>113</focusposition>
 							<visible>Container(1300102).HasFocus(5) + !Control.HasFocus(1300103)</visible>
 							<animation effect="fade" start="0" end="100" time="500">Visible</animation>
-							<animation effect="fade" end="0,0" time="300">WindowClose</animation>
+							<animation effect="fade" end="0,0" time="210">WindowClose</animation>
 							<control type="group">
 								<control type="image">
 									<posx>190</posx>
@@ -2199,8 +2201,8 @@ Search for window name
 
 		<!-- *********** E_LIVEWindow ********** -->	
 		<control type="group" id="1400000">
-			<!--animation effect="fade" start="0" end="100" time="200">Visible</animation-->
-			<!--<animation effect="fade" start="100" end="0" time="200">Hidden</animation>-->
+			<!--animation effect="fade" start="0" end="100" time="100">Visible</animation-->
+			<!--<animation effect="fade" start="100" end="0" time="100">Hidden</animation>-->
 			<visible>substring(Window.Property(CurrentWindow),1400000) | substring(Window.Property(CurrentWindow),4100000)</visible>
 			<defaultcontrol always="true">1003621</defaultcontrol>
 			<control type="image">
@@ -2258,103 +2260,14 @@ Search for window name
 						<label>$INFO[System.Time]</label>
 					</control>
 				</control-->
-
-			<!-- Meteo -->
-			<control type="group">
-					<posx>120r</posx>
-					<posy>70</posy>
-    			<visible>Skin.HasSetting(homepageBHWeather)</visible>					
-        					<control type="image">
-						<description>weather osd background</description>
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>130</width>
-						<height>100</height>
-					</control>
-					<control type="image">
-						<posx>-20</posx>
-						<posy>-70</posy>
-						<width>162</width>
-						<height>250</height>
-						<texture border="2,2,2,2" >pvr-bg.png</texture>
-						<colordiffuse>FEFFFFFF</colordiffuse>
-					</control>
-					<control type="label">
-						<description>weather day 1</description>
-						<posx>0</posx>
-						<posy>10</posy>
-						<width>90</width>
-						<height>10</height>
-						<align>left</align>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>$INFO[Window.Property(iMeteoday1)]</label>
-					</control>
-					<control type="image">
-						<description>weather icon 1</description>
-						<posx>35</posx>
-						<posy>-5</posy>
-						<width>70</width>
-						<height>70</height>
-						<texture>$INFO[Window.Property(iMeteopic1)]</texture>
-						<visible>!substring(Window.Property(InfoPlateName),true)</visible>
-						<colordiffuse>FFEFEFEF</colordiffuse>
-					</control>
-					<control type="label">
-						<description>weather temp1 </description>
-						<posx>0</posx>
-						<posy>37</posy>
-						<width>90</width>
-						<height>10</height>
-						<align>left</align>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>$INFO[Window.Property(iMeteot1)]</label>
-					</control>
-					
- 					<control type="label">
-						<description>weather day 2</description>
-						<posx>0</posx>
-						<posy>85</posy>
-						<width>90</width>
-						<height>10</height>
-						<align>left</align>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>$INFO[Window.Property(iMeteoday2)]</label>
-					</control>
-					<control type="image">
-						<description>weather icon 1</description>
-						<posx>35</posx>
-						<posy>70</posy>
-						<width>70</width>
-						<height>70</height>
-						<texture>$INFO[Window.Property(iMeteopic2)]</texture>
-						<visible>!substring(Window.Property(InfoPlateName),true)</visible>
-						<colordiffuse>FFEFEFEF</colordiffuse>
-					</control>
-					<control type="label">
-						<description>weather temp1 </description>
-						<posx>0</posx>
-						<posy>112</posy>
-						<width>90</width>
-						<height>10</height>
-						<align>left</align>
-						<font>font10</font>
-						<textcolor>white</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<label>$INFO[Window.Property(iMeteot2)]</label>
-					</control>
-				</control>
-
-		<!-- Rec info -->
+				
+				<!-- Meteo -->
+				<include condition="Skin.HasSetting(homepageBHWeather)">BhMeteoWidget</include>
+			<!-- Rec info -->
 				<control type="group">
 					<posx>450r</posx>
 					<posy>540</posy>
-					<animation effect="slide" start="300r,0" end="0r,0" delay="0" time="300" condition="Control.IsVisible(1400010) | Control.IsVisible(1400015)">conditional</animation>
+					<animation effect="slide" start="300r,0" end="0r,0" delay="0" time="210" condition="Control.IsVisible(1400010) | Control.IsVisible(1400015)">conditional</animation>
 					<control type="group">
 						<posx>0</posx>
 						<posy>-20</posy>
@@ -2497,7 +2410,7 @@ Search for window name
 						<description>labels for buttons</description>
 						<posx>-50</posx>
 						<posy>-37</posy>
-						<animation effect="slide" start="-200,0" end="0,0" delay="0" time="300" condition="ControlGroup(1003620).HasFocus | Control.HasFocus(1400702) | Control.HasFocus(1400706)">conditional</animation>
+						<animation effect="slide" start="-200,0" end="0,0" delay="0" time="210" condition="ControlGroup(1003620).HasFocus | Control.HasFocus(1400702) | Control.HasFocus(1400706)">conditional</animation>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -3050,8 +2963,8 @@ Search for window name
 		<!-- *********** E_Timeshift ********** -->
 		<control type="group" id="2900000">
 			<!--
-			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			<animation effect="fade" start="0" end="100" time="100">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="100">Hidden</animation>
 			-->
 			<visible>substring(Window.Property(CurrentWindow),2900000)</visible>
 			<control type="image">
@@ -3074,8 +2987,8 @@ Search for window name
 			<control type="group">
 				<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
-				<animation effect="slide" start="0,0" end="0,70r" time="300" tween="quadratic" easing="out" condition="!ControlGroup(1003750).HasFocus">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(1003750).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,70r" time="210" tween="quadratic" easing="out" condition="!ControlGroup(1003750).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,0" time="210" tween="quadratic" easing="out" condition="ControlGroup(1003750).HasFocus">Conditional</animation>
 				<control type="group">
 					<control type="image">
 						<description>media info background image</description>
@@ -3150,8 +3063,8 @@ Search for window name
 									<bordertexture border="5">button-focus.png</bordertexture>
 									<bordersize>4</bordersize>
 									<texture>$INFO[ListItem.Property(BookMarkThumb)]</texture>
-									<!--animation reversible="false" effect="zoom" start="0,100,144,-81" end="-32,40,208,100" time="200">focus</animation-->
-									<animation effect="zoom" start="100" end="130" center="auto" time="300" tween="quadratic" easing="in">focus</animation>
+									<!--animation reversible="false" effect="zoom" start="0,100,144,-81" end="-32,40,208,100" time="100">focus</animation-->
+									<animation effect="zoom" start="100" end="130" center="auto" time="210" tween="quadratic" easing="in">focus</animation>
 								</control>
 								<control type="label">
 			  					<posx>65</posx>
@@ -3183,7 +3096,7 @@ Search for window name
 				<control type="group">
 					<posx>450r</posx>
 					<posy>540</posy>
-					<animation effect="slide" start="300r,0" end="0r,0" delay="0" time="300" condition="Control.IsVisible(2900010) | Control.IsVisible(2900015)">conditional</animation>
+					<animation effect="slide" start="300r,0" end="0r,0" delay="0" time="210" condition="Control.IsVisible(2900010) | Control.IsVisible(2900015)">conditional</animation>
 					<control type="group">
 						<posx>0</posx>
 						<posy>-20</posy>
@@ -3421,7 +3334,7 @@ Search for window name
 						<midtexture border="6,0,6,0">OSDProgressMid_RED.png</midtexture>
 						<righttexture>-</righttexture>
 						<overlaytexture>-</overlaytexture>
-						<animation effect="fade" time="300">VisibleChange</animation>
+						<animation effect="fade" time="210">VisibleChange</animation>
 						<visible>false</visible>
 						<visible>substring(Window.Property(IsShift),true)</visible>
 					</control-->
@@ -3446,7 +3359,7 @@ Search for window name
 						<pagecontrol></pagecontrol>
 						<orientation>horizontal</orientation>
 						<usecontrolcoords>false</usecontrolcoords>
-						<animation effect="fade" time="300">VisibleChange</animation>
+						<animation effect="fade" time="210">VisibleChange</animation>
 						<visible>substring(Window.Property(IsShift),true)</visible>
 						<include>TimeshiftSliderBG</include>
 						<include>TimeshiftSliderBG</include>
@@ -4096,7 +4009,7 @@ Search for window name
 
 		<!-- *********** E_Archive ********** -->
 		<control type="group" id="3300000">
-			<!--<animation effect="fade" start="0" end="100" time="300">Visible</animation>-->
+			<!--<animation effect="fade" start="0" end="100" time="210">Visible</animation>-->
 			<visible>substring(Window.Property(CurrentWindow),3300000)</visible>
 			<defaultcontrol always="true">3309003</defaultcontrol>
 			<control type="image">
@@ -4498,15 +4411,16 @@ Search for window name
 				<animation effect="slide" start="0,0" end="250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(3309000).HasFocus | ControlGroup(3309001).HasFocus">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(3309000).HasFocus | ControlGroup(3309001).HasFocus">WindowClose</animation>
 				<control type="group">
-					<animation effect="slide" end="-240,0" time="300" tween="quadratic" easing="out">WindowClose</animation>
-					<animation effect="slide" start="-15,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+					<animation effect="slide" end="-240,0" time="210" tween="quadratic" easing="out">WindowClose</animation>
+					<animation effect="slide" start="-15,0" end="0,0" time="210" tween="quadratic" easing="out">WindowOpen</animation>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>1</width>
 						<height>727</height>
 						<texture>black-back_noAlpha.png</texture>
-						<animation effect="zoom" start="0,0,1,727" end="0,0,229,727" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(3300104) | ControlGroup(3309001).HasFocus">Conditional</animation>
+						<colordiffuse>DFFFFFFF</colordiffuse>
+						<animation effect="zoom" start="0,0,1,727" end="0,0,229,727" time="210" tween="quadratic" easing="out" condition="Control.HasFocus(3300104) | ControlGroup(3309001).HasFocus">Conditional</animation>
 					</control>
 					<control type="image">
 						<posx>1</posx>
@@ -4514,16 +4428,16 @@ Search for window name
 						<width>12</width>
 						<height>727</height>
 						<texture>MediaBladeSub_Part2.png</texture>
-						<animation effect="slide" end="228,0" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(3300104) | ControlGroup(3309001).HasFocus">Conditional</animation>
+						<animation effect="slide" end="228,0" time="210" tween="quadratic" easing="out" condition="Control.HasFocus(3300104) | ControlGroup(3309001).HasFocus">Conditional</animation>
 					</control>
 				</control>
 				<control type="group" id="3309001">
 					<posx>-220</posx>
 					<posy>0</posy>
 					<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(3309001).HasFocus + !Control.HasFocus(3300104)">conditional</animation>
-					<animation effect="fade" start="0" end="100" delay="300" time="200" condition="Control.HasFocus(3300104) | ControlGroup(3309001).HasFocus">conditional</animation>
+					<animation effect="fade" start="0" end="100" delay="160" time="100" condition="Control.HasFocus(3300104) | ControlGroup(3309001).HasFocus">conditional</animation>
 					<animation effect="fade" start="100" end="0" time="0" condition="Control.HasFocus(3300104) | ControlGroup(3309001).HasFocus">WindowClose</animation>
-					<animation effect="slide" end="220,0" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(3300104) | ControlGroup(3309001).HasFocus">conditional</animation>
+					<animation effect="slide" end="220,0" time="210" tween="quadratic" easing="out" condition="Control.HasFocus(3300104) | ControlGroup(3309001).HasFocus">conditional</animation>
 
 					<control type="button">
 						<description>Fake button for mouse control</description>
@@ -5340,7 +5254,7 @@ Search for window name
 		<!-- *********** E_EPG *********** or *********** E_EPG_SEARCH *********** -->
 		<control type="group" id="3709999">
 			<visible>substring(Window.Property(CurrentWindow),3700000) | substring(Window.Property(CurrentWindow),4400000)</visible>
-			<!--  <animation effect="fade" start="0" end="100" time="300">Visible</animation>-->
+			<!--  <animation effect="fade" start="0" end="100" time="210">Visible</animation>-->
 			<control type="group">
 				<include>DefaultWindowFade</include>
 				<control type="image">
@@ -5389,7 +5303,7 @@ Search for window name
 					<posy>40</posy>
 					<width>1200</width>
 					<height>620</height>
-					<colordiffuse>F0FFFFFF</colordiffuse>
+					<colordiffuse>FDFFFFFF</colordiffuse>
 					<visible>substring(Window.Property(EPGMode),grid)</visible>
 					<texture border="15">ContentPanel_New.png</texture>
 				</control>
@@ -5823,6 +5737,21 @@ Search for window name
 								<label>$INFO[ListItem.Label]</label>
 								<scroll>false</scroll>
 							</control>
+							<!-- Channel Name -->
+							<control type="label">
+								<posx>85</posx>
+								<posy>35</posy>
+								<width>185</width>
+								<height>20</height>
+								<font>font12</font>
+								<textcolor>grey2</textcolor>
+								<selectedcolor>grey2</selectedcolor>
+								<align>left</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label2]</label>
+								<scroll>false</scroll>
+								<scrollspeed>150</scrollspeed>
+							</control>
 						</itemlayout>
 						<focusedlayout height="63" width="270">
 							<control type="image">
@@ -5858,6 +5787,20 @@ Search for window name
 								<align>left</align>
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.Label]</label>
+								<scroll>false</scroll>
+							</control>
+							<!-- Channel Name -->
+							<control type="label">
+								<posx>85</posx>
+								<posy>35</posy>
+								<width>185</width>
+								<height>20</height>
+								<font>font12</font>
+								<textcolor>grey2</textcolor>
+								<selectedcolor>grey2</selectedcolor>
+								<align>left</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label2]</label>
 								<scroll>false</scroll>
 							</control>
 						</focusedlayout>
@@ -6519,18 +6462,19 @@ Search for window name
 			</control>
 			
 			<control type="group">
-				<animation effect="slide" start="0,0" end="250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(3709000).HasFocus | ControlGroup(3709001).HasFocus">Conditional</animation>
-				<animation effect="slide" start="0,0" end="-250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(3709000).HasFocus | ControlGroup(3709001).HasFocus">WindowClose</animation>
+				<animation effect="slide" start="0,0" end="250,0" time="100" tween="quadratic" easing="out" condition="ControlGroup(3709000).HasFocus | ControlGroup(3709001).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-250,0" time="100" tween="quadratic" easing="out" condition="ControlGroup(3709000).HasFocus | ControlGroup(3709001).HasFocus">WindowClose</animation>
 				<control type="group">
-					<animation effect="slide" end="-240,0" time="300" tween="quadratic" easing="out">WindowClose</animation>
-					<animation effect="slide" start="-15,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+					<animation effect="slide" end="-240,0" time="100" tween="quadratic" easing="out">WindowClose</animation>
+					<animation effect="slide" start="-15,0" end="0,0" time="100" tween="quadratic" easing="out">WindowOpen</animation>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>1</width>
 						<height>720</height>
 						<texture>black-back_noAlpha.png</texture>
-						<animation effect="zoom" start="0,0,1,720" end="0,0,229,720" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(3700101) | ControlGroup(3709001).HasFocus">Conditional</animation>
+						<colordiffuse>DFFFFFFF</colordiffuse>
+						<animation effect="zoom" start="0,0,1,720" end="0,0,229,720" time="210" tween="quadratic" easing="out" condition="Control.HasFocus(3700101) | ControlGroup(3709001).HasFocus">Conditional</animation>
 					</control>
 					<control type="image">
 						<posx>1</posx>
@@ -6538,16 +6482,17 @@ Search for window name
 						<width>12</width>
 						<height>720</height>
 						<texture>MediaBladeSub_Part2.png</texture>
-						<animation effect="slide" end="228,0" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(3700101) | ControlGroup(3709001).HasFocus">Conditional</animation>
+						<colordiffuse>EFFFFFFF</colordiffuse>
+						<animation effect="slide" end="228,0" time="210" tween="quadratic" easing="out" condition="Control.HasFocus(3700101) | ControlGroup(3709001).HasFocus">Conditional</animation>
 					</control>
 				</control>
 				<control type="group" id="3709001">
 					<posx>-220</posx>
 					<posy>0</posy>
 					<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(3709001).HasFocus + !Control.HasFocus(3700101)">conditional</animation>
-					<animation effect="fade" start="0" end="100" delay="300" time="200" condition="Control.HasFocus(3700101) | ControlGroup(3709001).HasFocus">conditional</animation>
+					<animation effect="fade" start="0" end="100" delay="160" time="100" condition="Control.HasFocus(3700101) | ControlGroup(3709001).HasFocus">conditional</animation>
 					<animation effect="fade" start="100" end="0" time="0" condition="Control.HasFocus(3700101) | ControlGroup(3709001).HasFocus">WindowClose</animation>
-					<animation effect="slide" end="220,0" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(3700101) | ControlGroup(3709001).HasFocus">conditional</animation>
+					<animation effect="slide" end="220,0" time="210" tween="quadratic" easing="out" condition="Control.HasFocus(3700101) | ControlGroup(3709001).HasFocus">conditional</animation>
 
 					<control type="button">
 						<description>Fake button for mouse control</description>
@@ -6903,7 +6848,7 @@ Search for window name
 
 		<!-- *********** E_TimerWindow ********** -->
 		<control type="group" id="4000000">
-			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+			<animation effect="fade" start="0" end="100" time="210">Visible</animation>
 			<visible>substring(Window.Property(CurrentWindow),4000000)</visible>
 			<defaultcontrol always="true">4009003</defaultcontrol>
 			<control type="group">
@@ -6993,15 +6938,16 @@ Search for window name
 				<animation effect="slide" start="0,0" end="250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(4009000).HasFocus | ControlGroup(4009001).HasFocus">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(4009000).HasFocus | ControlGroup(4009001).HasFocus">WindowClose</animation>
 				<control type="group">
-					<animation effect="slide" end="-240,0" time="300" tween="quadratic" easing="out">WindowClose</animation>
-					<animation effect="slide" start="-15,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+					<animation effect="slide" end="-240,0" time="210" tween="quadratic" easing="out">WindowClose</animation>
+					<animation effect="slide" start="-15,0" end="0,0" time="210" tween="quadratic" easing="out">WindowOpen</animation>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>1</width>
 						<height>720</height>
 						<texture>MediaBladeSub_Part1.png</texture>
-						<animation effect="zoom" start="0,0,1,720" end="0,0,229,720" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(4000101) | ControlGroup(4009001).HasFocus">Conditional</animation>
+						<colordiffuse>EFFFFFFF</colordiffuse>
+						<animation effect="zoom" start="0,0,1,720" end="0,0,229,720" time="210" tween="quadratic" easing="out" condition="Control.HasFocus(4000101) | ControlGroup(4009001).HasFocus">Conditional</animation>
 					</control>
 					<control type="image">
 						<posx>1</posx>
@@ -7009,7 +6955,8 @@ Search for window name
 						<width>12</width>
 						<height>720</height>
 						<texture>MediaBladeSub_Part2.png</texture>
-						<animation effect="slide" end="228,0" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(4000101) | ControlGroup(4009001).HasFocus">Conditional</animation>
+						<colordiffuse>EFFFFFFF</colordiffuse>
+						<animation effect="slide" end="228,0" time="210" tween="quadratic" easing="out" condition="Control.HasFocus(4000101) | ControlGroup(4009001).HasFocus">Conditional</animation>
 					</control>
 				</control>
 				<include>DefaultSideBladeLeft</include>
@@ -7538,7 +7485,7 @@ Search for window name
 			
 			<control type="group" id="4609999">
 				<defaultcontrol always="true">4601000</defaultcontrol>	
-				<!--animation effect="slide" start="0,0" end="-420,0" time="300" tween="quadratic" easing="out" condition="Control.HasFocus(4601000)">Conditional</animation-->
+				<!--animation effect="slide" start="0,0" end="-420,0" time="210" tween="quadratic" easing="out" condition="Control.HasFocus(4601000)">Conditional</animation-->
 				<control type="image">
 					<posx>880</posx>
 					<posy>-7</posy>
@@ -7744,6 +7691,7 @@ Search for window name
 		</control>
 
 		<!-- Time & Date -->
+		<include>NullWindowDataTime</include>
 		<include>DefaultCommonTime</include>
 		<include>DefaultCommonDate</include>
 		<include>DefaultCommonLiveStatus</include>
@@ -7757,10 +7705,10 @@ Search for window name
 				<width>352</width>
 				<height>198</height>
 				<!--
-				<animation effect="zoom" start="0" end="100" center="auto" time="300" tween="quadratic" easing="out">Visible</animation>
-				<animation effect="zoom" start="100" end="0" center="auto" time="300" tween="quadratic" easing="in">Hidden</animation>
-				<animation effect="zoom" start="0" end="100" center="auto" time="300" tween="quadratic" easing="out" condition="!Control.HasFocus(1000999)">Conditional</animation>
-				<animation effect="zoom" start="100" end="0" center="auto" time="300" tween="quadratic" easing="in" condition="Control.HasFocus(1000999)">Conditional</animation>
+				<animation effect="zoom" start="0" end="100" center="auto" time="210" tween="quadratic" easing="out">Visible</animation>
+				<animation effect="zoom" start="100" end="0" center="auto" time="210" tween="quadratic" easing="in">Hidden</animation>
+				<animation effect="zoom" start="0" end="100" center="auto" time="210" tween="quadratic" easing="out" condition="!Control.HasFocus(1000999)">Conditional</animation>
+				<animation effect="zoom" start="100" end="0" center="auto" time="210" tween="quadratic" easing="in" condition="Control.HasFocus(1000999)">Conditional</animation>
 				-->
 				<texture>backgrounds/RADIOSKIN.jpg</texture>
 			</control>
@@ -7771,10 +7719,10 @@ Search for window name
 				<width>352</width>
 				<height>198</height>
 				<!--
-				<animation effect="zoom" start="0" end="100" center="auto" time="300" tween="quadratic" easing="out">Visible</animation>
-				<animation effect="zoom" start="100" end="0" center="auto" time="300" tween="quadratic" easing="in">Hidden</animation>
-				<animation effect="zoom" start="0" end="100" center="auto" time="300" tween="quadratic" easing="out" condition="!Control.HasFocus(1000999)">Conditional</animation>
-				<animation effect="zoom" start="100" end="0" center="auto" time="300" tween="quadratic" easing="in" condition="Control.HasFocus(1000999)">Conditional</animation>
+				<animation effect="zoom" start="0" end="100" center="auto" time="210" tween="quadratic" easing="out">Visible</animation>
+				<animation effect="zoom" start="100" end="0" center="auto" time="210" tween="quadratic" easing="in">Hidden</animation>
+				<animation effect="zoom" start="0" end="100" center="auto" time="210" tween="quadratic" easing="out" condition="!Control.HasFocus(1000999)">Conditional</animation>
+				<animation effect="zoom" start="100" end="0" center="auto" time="210" tween="quadratic" easing="in" condition="Control.HasFocus(1000999)">Conditional</animation>
 				-->
 				<texture>video_pig_overlay.png</texture>
 			</control>
@@ -7796,6 +7744,7 @@ Search for window name
 					<width>328</width>
 					<height>170</height>
 					<texture>black-back_noAlpha.png</texture>
+					<colordiffuse>DFFFFFFF</colordiffuse>
 					<visible>substring(Window(10000).Property(BlankPIP),true)</visible>
 				</control>
 				<control type="group">
@@ -7864,10 +7813,10 @@ Search for window name
 		<!-- No Signal Label -->
 		<control type="group">
 			<visible>substring(Window.Property(SettingPIG),True) + substring(Window.Property(PvrPlay),False) + !substring(Window.Property(CurrentWindow),2400000) + !substring(Window.Property(CurrentWindow),2500000) + !substring(Window.Property(CurrentWindow),1900000) + !substring(Window.Property(CurrentWindow),1800000) + !substring(Window.Property(CurrentWindow),2800000) + !substring(Window.Property(CurrentWindow),3200000)</visible>
-			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
-			<animation effect="fade" start="100" end="0" time="300" condition="Control.HasFocus(1000999)" type="conditional">Conditional</animation>
-			<animation effect="fade" start="0" end="100" time="300" condition="!Control.HasFocus(1000999)" type="conditional">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="210">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="210">Hidden</animation>
+			<animation effect="fade" start="100" end="0" time="210" condition="Control.HasFocus(1000999)" type="conditional">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="210" condition="!Control.HasFocus(1000999)" type="conditional">Conditional</animation>
 			<control type="label" id="1001020">
 				<posx>930</posx>
 				<posy>250</posy>
