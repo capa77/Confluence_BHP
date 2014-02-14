@@ -4,7 +4,7 @@
 	<backgroundcolor>0x00ffffff</backgroundcolor>
 	<onload condition="!Skin.HasSetting(FirstTimeRun)">ActivateWindow(1112)</onload>
 	<controls>
-  <include condition="!Control.IsVisible(1200000)">CommonBackground</include>
+		<include condition="!Control.IsVisible(1400000)">CommonBackground</include>
 		<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
